@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Fleet - Chandima Traveling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#4f46e5',
+                        dark: '#0f172a'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-dark text-white border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-route text-blue-400 text-3xl"></i>
+                    <a href="index.html" class="font-bold text-2xl tracking-wide">Chandima<span
+                            class="text-blue-400">Travels</span></a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="hover:text-blue-400 transition-colors">Home</a>
+                    <a href="vehicles.html" class="text-blue-400 font-medium transition-colors">Our Fleet</a>
+                    <a href="about.html" class="hover:text-blue-400 transition-colors">About Us</a>
+                    <a href="contact.html" class="hover:text-blue-400 transition-colors">Contact</a>
+                    <a href="contact.html"
+                        class="bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-2.5 rounded-full font-semibold hover:shadow-lg hover:shadow-blue-500/30 transition-all transform hover:-translate-y-0.5">
+                        Book Now
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-dark border-t border-white/10 absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2 flex flex-col">
+                <a href="index.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md font-medium">Home</a>
+                <a href="vehicles.html" class="text-blue-400 block px-3 py-2 rounded-md font-medium">Our Fleet</a>
+                <a href="about.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md font-medium">About
+                    Us</a>
+                <a href="contact.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-dark overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-dark/90 z-10"></div>
+            <img src="assets/images/hero.png" alt="Fleet Banner" class="w-full h-full object-cover filter blur-sm">
+        </div>
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal opacity-0">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">Meet Our <span
+                    class="text-gradient">Premium Fleet</span></h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto font-light">From luxury cars to spacious buses, we have
+                the perfect vehicle to make your journey extraordinary.</p>
+        </div>
+    </header>
+
+    <!-- Cars Section -->
+    <section id="cars" class="py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center mb-12 reveal opacity-0">
+                <div
+                    class="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center text-blue-600 text-3xl mr-6 shadow-lg border border-blue-200">
+                    <i class="fa-solid fa-car"></i>
+                </div>
+                <div>
+                    <h2 class="text-4xl font-extrabold text-gray-900">Luxury Cars</h2>
+                    <p class="text-gray-500 mt-2 text-lg">Travel in absolute comfort and unmatched style.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="reveal opacity-0">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl group hover-zoom">
+                        <div
+                            class="absolute inset-0 bg-blue-600/20 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none">
+                        </div>
+                        <img src="assets/images/car.png" alt="Luxury Car" class="w-full h-[500px] object-cover">
+                        <div
+                            class="absolute bottom-6 left-6 z-20 bg-white/90 backdrop-blur-md px-6 py-3 rounded-2xl shadow-xl border border-white/50">
+                            <span class="font-bold text-gray-900 text-lg">Premium Sedans</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal opacity-0 delay-200">
+                    <h3 class="text-3xl font-bold mb-6 text-gray-900">The Perfect Business & Leisure Ride</h3>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        Our premium sedans are equipped with modern amenities, plush leather seating, and superior
+                        climate control. Perfect for airport transfers, corporate meetings, or exploring the island in
+                        elegance.
+                    </p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center text-gray-700 bg-gray-50 p-4 rounded-xl border border-gray-100"><i
+                                class="fa-solid fa-check text-blue-500 mr-4 text-xl"></i> Fully Air-Conditioned Comfort
+                        </li>
+                        <li class="flex items-center text-gray-700 bg-gray-50 p-4 rounded-xl border border-gray-100"><i
+                                class="fa-solid fa-check text-blue-500 mr-4 text-xl"></i> Professional Uniformed
+                            Chauffeur</li>
+                        <li class="flex items-center text-gray-700 bg-gray-50 p-4 rounded-xl border border-gray-100"><i
+                                class="fa-solid fa-check text-blue-500 mr-4 text-xl"></i> Complimentary Wi-Fi & Bottled
+                            Water</li>
+                    </ul>
+                    <a href="contact.html?vehicle=car"
+                        class="bg-blue-600 text-white px-8 py-4 rounded-full font-bold hover:bg-blue-700 transition shadow-lg hover:shadow-blue-500/30 inline-flex items-center transform hover:-translate-y-1">
+                        Book a Car <i class="fa-solid fa-arrow-right ml-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vans Section -->
+    <section id="vans" class="py-24 bg-gray-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-900/20 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-row-reverse items-center mb-12 reveal opacity-0">
+                <div
+                    class="w-16 h-16 rounded-2xl bg-gray-800 flex items-center justify-center text-blue-400 text-3xl ml-6 border border-gray-700 shadow-2xl">
+                    <i class="fa-solid fa-van-shuttle"></i>
+                </div>
+                <div class="text-right">
+                    <h2 class="text-4xl font-extrabold text-white">Passenger Vans</h2>
+                    <p class="text-gray-400 mt-2 text-lg">Spacious, safe, and family-friendly.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1 reveal opacity-0 delay-200">
+                    <h3 class="text-3xl font-bold mb-6 text-white">Ideal for Groups and Families</h3>
+                    <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+                        Travelling as a group? Our high-roof passenger vans provide ample legroom and luggage space. The
+                        perfect companion for extended family vacations, wildlife safaris, and cross-country tours.
+                    </p>
+                    <ul class="space-y-4 mb-10">
+                        <li
+                            class="flex items-center text-gray-300 bg-gray-800/50 p-4 rounded-xl border border-gray-700">
+                            <i class="fa-solid fa-users text-blue-400 mr-4 text-xl"></i> Seats up to 10-14 Passengers
+                        </li>
+                        <li
+                            class="flex items-center text-gray-300 bg-gray-800/50 p-4 rounded-xl border border-gray-700">
+                            <i class="fa-solid fa-suitcase-rolling text-blue-400 mr-4 text-xl"></i> Generous Luggage
+                            Capacity
+                        </li>
+                        <li
+                            class="flex items-center text-gray-300 bg-gray-800/50 p-4 rounded-xl border border-gray-700">
+                            <i class="fa-solid fa-snowflake text-blue-400 mr-4 text-xl"></i> Dual A/C Output &
+                            Entertainment
+                        </li>
+                    </ul>
+                    <a href="contact.html?vehicle=van"
+                        class="glass px-8 py-4 rounded-full font-bold hover:bg-white/10 transition border border-gray-600 inline-flex items-center transform hover:-translate-y-1">
+                        Book a Van <i class="fa-solid fa-arrow-right ml-3 text-blue-400"></i>
+                    </a>
+                </div>
+                <div class="order-1 md:order-2 reveal opacity-0">
+                    <div
+                        class="relative rounded-3xl overflow-hidden shadow-2xl group hover-zoom border border-blue-800">
+                        <img src="assets/images/van.jpeg"
+                            alt="Passenger Van" class="w-full h-[500px] object-cover">
+                        <div
+                            class="absolute bottom-6 right-6 z-20 glass-dark px-6 py-3 rounded-2xl border border-white/10 shadow-xl">
+                            <span class="font-bold text-white text-lg">Multi-passenger Vans</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buses Section -->
+    <section id="buses" class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center mb-12 reveal opacity-0">
+                <div
+                    class="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center text-indigo-600 text-3xl mr-6 shadow-lg border border-indigo-100">
+                    <i class="fa-solid fa-bus"></i>
+                </div>
+                <div>
+                    <h2 class="text-4xl font-extrabold text-gray-900">Luxury Buses</h2>
+                    <p class="text-gray-500 mt-2 text-lg">For larger parties and corporate outings.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="reveal opacity-0">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl group hover-zoom group">
+                        <img src="assets/images/bus.jpeg" alt="Luxury Bus" class="w-full h-[500px] object-cover">
+                        <div class="absolute bottom-6 left-6 z-20 bg-white/90 backdrop-blur-md px-6 py-3 rounded-2xl shadow-xl border border-white/50">
+                            <span class="font-bold text-gray-900 text-lg">29-45 Seater Coaches</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal opacity-0 delay-200">
+                <h3 class="text-3xl font-bold mb-6 text-gray-900">Ultimate Travel for Large Groups</h3>
+                <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                    Our modern coaches are precisely designed to handle large tour groups, school excursions, and
+                    company retreats. Enjoy unparalleled safety and panoramic views as you traverse the island.
+                </p>
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-center text-gray-700 bg-indigo-50/50 p-4 rounded-xl border border-indigo-50">
+                        <i class="fa-solid fa-microphone text-indigo-500 mr-4 text-xl"></i> PA Systems for Tour
+                        Guides
+                    </li>
+                    <li class="flex items-center text-gray-700 bg-indigo-50/50 p-4 rounded-xl border border-indigo-50">
+                        <i class="fa-solid fa-chair text-indigo-500 mr-4 text-xl"></i> Reclining Seats & Individual
+                        A/C
+                    </li>
+                    <li class="flex items-center text-gray-700 bg-indigo-50/50 p-4 rounded-xl border border-indigo-50">
+                        <i class="fa-solid fa-road text-indigo-500 mr-4 text-xl"></i> High Ground Clearance & Safety
+                        Systems
+                    </li>
+                </ul>
+                <a href="contact.html?vehicle=bus"
+                    class="bg-gradient-to-r from-indigo-600 to-blue-600 text-white px-8 py-4 rounded-full font-bold hover:shadow-2xl hover:shadow-indigo-500/30 transition inline-flex items-center transform hover:-translate-y-1">
+                    Book a Bus <i class="fa-solid fa-arrow-right ml-3"></i>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index) -->
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <i class="fa-solid fa-route text-blue-500 text-3xl"></i>
+                        <span class="font-bold text-2xl text-white tracking-wide">Chandima<span
+                                class="text-blue-500">Travels</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">Your trusted partner for vehicle rentals in Sri Lanka.
+                        Offering a wide range of luxury cars, comfortable vans, and spacious buses for all your travel
+                        needs.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Contact Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-phone mr-3 text-blue-500"></i>
+                            <a href="tel:0755008600"
+                                class="hover:text-white transition-colors font-bold text-blue-400">0755 008 600</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-brands fa-whatsapp flex text-lg mr-3 text-green-500"></i>
+                            <a href="https://wa.me/94755008600" target="_blank"
+                                class="hover:text-white transition-colors">WhatsApp Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
+                <p>&copy; 2026 Chandima Traveling. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
